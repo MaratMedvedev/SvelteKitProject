@@ -1,3 +1,5 @@
+
+
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
@@ -12,13 +14,19 @@ const config = {
 	kit: {
 		adapter: adapter({
             pages: "docs",
-            assets: "docs"
+            assets: "docs",
+			fallback: null
         }),
         paths: {
             // change below to your repo name
             base: dev ? "" : "/SvelteKitProject",
         },
-        appDir: "_app"
+        prerender: {
+			crawl: true,
+			enabled: true,
+			onError: 'continue',
+			default: true
+		},
         // hydrate the <div id="svelte"> element in src/app.html
 	}
 };
