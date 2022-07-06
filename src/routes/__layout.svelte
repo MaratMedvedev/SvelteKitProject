@@ -15,7 +15,7 @@
 			{#each items as item}
 				<li>
 					<a
-						href="/{item.name != 'about' ? item.name : ''}"
+						href="./{item.name != 'about' ? item.name : ''}"
 						class={item.name === activeElem ? 'active' : item.id % 2 ? 'odd' : 'even'}
 						on:click={() => {
 							activeElem = item.name;

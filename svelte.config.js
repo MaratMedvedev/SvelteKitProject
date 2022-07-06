@@ -12,7 +12,8 @@ const config = {
 		adapter: adapter(),
 		paths: {
 			base: dev ? '' : '/SvelteKitProject',
-		}
+		},
+		appDir: 'internal',
 	}
 };
 
