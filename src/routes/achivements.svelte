@@ -2,7 +2,7 @@
 </script>
 
 <main>
-    <img class="cup" src="achiv.png" alt="Pic Name" />
+    <img class="cup" src="./achiv.png" alt="Pic Name" />
     <p class="TextAchivements">Winner "Step in the future" competition 2021</p>
     <p class="TextAchivements">...</p>
 </main>
