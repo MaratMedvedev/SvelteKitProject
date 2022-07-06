@@ -1,4 +1,5 @@
 <script lang="ts">
+	// 
     class API {
         // static toRet: string;
         static async getRandomAPI(): Promise<string> {
