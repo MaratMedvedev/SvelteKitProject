@@ -18,6 +18,7 @@ const config = {
             // change below to your repo name
             base: dev ? "" : "/SvelteKitProject",
         },
+        appDir: "_app"
         // hydrate the <div id="svelte"> element in src/app.html
 	}
 };
