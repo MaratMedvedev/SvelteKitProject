@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <main>
     <p class="textInContact">You can contact me using</p>
     <div class="Logos">

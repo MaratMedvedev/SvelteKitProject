@@ -10,13 +10,16 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter(),
-
-		paths: {
-			base: dev ? '' : '/SvelteKitProject',
-		},
-
-		appDir: 'app_'
+		adapter: adapter({
+            pages: "docs",
+            assets: "docs"
+        }),
+        paths: {
+            // change below to your repo name
+            base: dev ? "" : "/SvelteKitProject",
+        },
+        // hydrate the <div id="svelte"> element in src/app.html
+       // target: "#svelte"
 	}
 };
 
